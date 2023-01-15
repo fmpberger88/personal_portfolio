@@ -80,8 +80,17 @@ section .row img {
 }
 
 .portrait {
-    width:  350px;
-    height: auto;
+    width:  440px;
+    height: 572px;
+}
+
+.description {
+    width: 440px;
+}
+
+.edulist {
+    width: 300px;
+    margin-top: 50px;
 }
 
 .experience {
