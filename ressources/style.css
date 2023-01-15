@@ -24,15 +24,20 @@ nav {
 a {
     padding: 0 20px;
     margin: 0;
+    color: black;
+}
+
+a:hover {
+    color: grey;
 }
 
 .jumbotron {
     display: flex;
     align-items: center;
-    background-image: url("C:/Users/fmpbe/OneDrive/Documents/online/personal_portffolio/personal_portfolio/ressources/mountains.jpg");
+    background-image: url(mountains.jpg);
     background-size: cover;
     color: #ffffff;
-    height: 750px;
+    height: 600px;
 }
 
 .jumbotron h2 {
@@ -76,7 +81,11 @@ section .row img {
 
 .portrait {
     width:  350px;
-    height: 300px;
+    height: auto;
+}
+
+.experience {
+    margin-top: 75px;
 }
 
 figure img {
