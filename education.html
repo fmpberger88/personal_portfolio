@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="./ressources/style.css" type="text/css" rel="stylesheet">
+    <link href="./ressources/style_experience.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="ressources/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header class="container">
         <div class="row">
-            <h2 class="col-sm-8">Fabian Marc Pascal Berger</h2>
+            <h1 class="col-sm-8">Fabian Marc Pascal Berger</h1>
             <nav class="col-sm-12 text-right">
                 <a href="./index.html">Home</a>
                 <a href="./about.html">About Me</a>
@@ -21,27 +21,35 @@
             </nav>
          </div>
     </header>
-    <section class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <h2>Education</h2>
-            </div>
-        </div>
-    </section>
+    <div class="container"> <!-- Added container wrapper -->
+      <section class="jumbotron">
+          <div class="container">
+              <div class="row">
+                  <h2 class="jumbotron_text">Education</h2>
+              </div>
+          </div>
+      </section>
+    </div> <!-- End of container wrapper -->
     <main class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-5">
+                <img class="edu-img img-fluid rounded shadow" src="./ressources/unilu.jpg" alt="University of Lucerne" style="max-width: 250px;">
+            </div>
+            <div class="col-sm-7">
                 <p class="font-weight-bold">University of Lucerne</p>
-                <img class="portrait" src="./ressources/unilu.jpg">
                 <ul class="edulist">
                     <li>Master of Art in Cultural Studies - Major Sociology</li>
                     <li>Assistant in Teaching Statistics</li>
                     <li>Bachelor of Arts in Sociology</li>
                 </ul>
             </div>
-            <div class="col-sm-6">
+        </div>
+        <div class="row mt-4"> <!-- mt-4 adds margin-top to separate the rows a bit -->
+            <div class="col-sm-5">
+                <img class="edu-img img-fluid rounded shadow" src="./ressources/learn.jpg" alt="Continuing Education" style="max-width: 250px;">
+            </div>
+            <div class="col-sm-7">
                 <p class="font-weight-bold">Continuing Education</p>
-                <img class="portrait" src="./ressources/learn.jpg">
                 <ul class="edulist">
                     <li>Codecademy</li>
                     <li>Project and change management at the Careum School of Health</li>
@@ -54,13 +62,13 @@
         <div class="row">
             <p class="col-sm-3">&copy; 2023 Fabian Marc Pascal Berger</p>
             <div class="col-sm-3">
-                <a href="https://www.linkedin.com/in/fabian-berger-80003ba6/" target="_blank">Linkedin</a>
+                <a href="https://www.linkedin.com/in/fabian-berger-80003ba6/" target="_blank" aria-label="Linkedin">Linkedin</a>
             </div>
             <div class="col-sm-3">
-                <a href="https://github.com/fmpberger88" target="_blank">Github</a>
+                <a href="https://github.com/fmpberger88" target="_blank" aria-label="Github">Github</a>
             </div>
             <div class="col-sm-3">
-                <a href="https://www.researchgate.net/profile/Fabian-Berger-2" target="_blank">ResarchGate</a>
+                <a href="https://www.researchgate.net/profile/Fabian-Berger-2" target="_blank" aria-label="ResearchGate">ResarchGate</a>
             </div>
         </div>
     </footer>

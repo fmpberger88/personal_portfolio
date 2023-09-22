@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    padding: 20px 0;
+    padding: 20px 0px;
 }
 
 header .row,
@@ -30,6 +30,12 @@ a {
 
 a:hover {
     color: grey;
+}
+
+.portfolio {
+    color: green;
+    margin-left: 50px;
+    
 }
 
 .jumbotron {

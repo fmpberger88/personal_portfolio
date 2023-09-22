@@ -1,0 +1,162 @@
+/* Resetting some default styles and general settings */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Light gray to give a softer look */
+    color: #333; /* Dark gray for texts */
+    line-height: 1.6; /* Improved readability */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #343a40; /* Darker header */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px 0;
+}
+
+header h2 {
+    font-weight: 700;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    background-image: url(mountain_2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    height: 600px;
+    padding: 0; /* No padding to ensure full width */
+    border-radius: 0; /* No border-radius to maintain the blocky layout */
+    margin-left: -20px; /* To offset the container padding */
+    margin-right: -20px; /* To offset the container padding */
+}
+
+.jumbotron_text {
+    margin-left: 20px;
+}
+
+.portrait {
+    width: 100%; 
+
+    margin-bottom: 40px; 
+    margin-left: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    padding: 60px;
+    font-size: 1.2em; /* Make text a bit larger for readability */
+    line-height: 1.5; /* Improve text spacing */
+}
+
+/* Optional: Add some media query if needed for responsiveness */
+@media (max-width: 767px) {
+    .description {
+        padding-top: 10px;
+    }
+}
+
+.edu-img {
+    width: 100%; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edulist {
+    padding-left: 20px; /* Add some padding to the list */
+    font-size: 1.1em; /* Make text a bit larger for readability */
+    line-height: 1.5; /* Improve text spacing */
+}
+
+
+.langexp {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.lang {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.expul {
+    list-style-type: none;
+}
+
+.expli {
+    background-color: #ffffff; 
+    padding: 10px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; /* Animation effect */
+}
+
+.expli:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+.experience h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.ulexperience {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.ulexperience li {
+    margin-bottom: 10px;
+}
+
+.portfolio {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.portfolio:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 30px; /* Separation from the rest of the content */
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
