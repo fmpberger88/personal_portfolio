@@ -124,6 +124,15 @@ nav a:hover {
     font-weight: 700;
 }
 
+.ulexperience_professional {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.ulexperience_professional li {
+    margin-bottom: 10px;
+}
+
 .ulexperience {
     list-style-type: none;
     margin-bottom: 30px;
@@ -132,6 +141,7 @@ nav a:hover {
 .ulexperience li {
     margin-bottom: 10px;
 }
+
 
 .portfolio {
     color: #007bff;
@@ -160,3 +170,13 @@ footer a:hover {
     color: #007bff;
 }
 
+@media (max-width: 767px) {
+    .ulexperience {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ulexperience li {
+        flex-basis: 50%; /* Zwei Spalten pro Zeile auf kleinen Bildschirmen */
+    }
+}
