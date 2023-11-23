@@ -28,11 +28,18 @@ header h2 {
     font-weight: 700;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+
 nav a {
-    margin: 0 15px;
+    margin: 10px 30px;
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth color transition */
+    font-size: 18px;
 }
 
 nav a:hover {
@@ -42,7 +49,7 @@ nav a:hover {
 .jumbotron {
     display: flex;
     align-items: center;
-    background-image: url(mountain_2.webp);
+    background-image: url(reed_tree.webp);
     background-position: center;
     background-size: cover;
     color: #ffffff;
@@ -57,11 +64,17 @@ nav a:hover {
     margin-left: 20px;
 }
 
+.about_me{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 50px;
+    align-items: center;
+}
+
 .portrait {
     width: 100%; 
-
     margin-bottom: 40px; 
-    margin-left: 80px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -170,6 +183,56 @@ footer a:hover {
     color: #007bff;
 }
 
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 100px;
+    margin-top: 20px;
+    
+}
+
+.fab {
+    font-size: 36px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 120px
+}
+
+    /* Style for the submit button on hover */
+button[type="submit"]:hover {
+    background-color: darkgrey;
+}
+
 @media (max-width: 767px) {
     .ulexperience {
         display: flex;
@@ -178,5 +241,11 @@ footer a:hover {
 
     .ulexperience li {
         flex-basis: 50%; /* Zwei Spalten pro Zeile auf kleinen Bildschirmen */
+    }
+    nav {
+        flex-direction: column;
+    }
+    .about_me {
+        flex-wrap: wrap;
     }
 }
