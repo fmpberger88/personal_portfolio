@@ -236,11 +236,12 @@ button[type="submit"]:hover {
 @media (max-width: 767px) {
     .ulexperience {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .ulexperience li {
-        flex-basis: 50%; /* Zwei Spalten pro Zeile auf kleinen Bildschirmen */
+        margin-left: 0;
+        margin-right: 0;
     }
     nav {
         flex-direction: column;
