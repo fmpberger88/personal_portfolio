@@ -3,8 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Fabian Marc Pascal Berger's Portfolio Website">
-    <meta http-equiv="x-ua-compatible" content="DENY">
-    <meta name="referrer" content="no-referrer">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -12,94 +10,100 @@
     <link href="./ressources/style_experience.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="ressources/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo" defer></script>
 </head>
 <body>
-    <header class="container">
-        <div>
-            <h1>Fabian Marc Pascal Berger</h1>
-        </div>
-        <div>
-            <nav>
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./education.html">Education</a>
-                <a href="./contactme.html">Contact</a>
-            </nav>
-         </div>
-    </header>
-    <div class="container"> <!-- Added container wrapper -->
-      <section class="jumbotron p-4">
-          <div class="container">
-              <div class="row">
-                  <h2 class="jumbotron_text">Experience</h2>
-              </div>
-          </div>
-      </section>
-    </div> <!-- End of container wrapper -->
-    <section class="container">
-        <div class="row">
-            <div class="col-sm-3 langexp">
-                <img src="./ressources/r.png" class="img_responsive lang" alt="r language">
-                <ul class="expul">
-                    <li class="expli">2 years Intermediate</li>
-                </ul>
-            </div>
-            <div class="col-sm-3 langexp">
-                <img src="./ressources/python.svg" class="img_responsive lang" alt="python language">
-                <ul class="expul">
-                    <li class="expli">2 years Intermediate</li>
-                </ul>
-            </div>
-            <div class="col-sm-3 langexp">
-                <img src="./ressources/html.png" class="img_responsive lang" alt="html and css">
-                <ul class="expul">
-                    <li class="expli">1 year Intermediate</li>
-                </ul>
-            </div>
-            <div class="col-sm-3 langexp">
-                <img src="./ressources/javascript.png" class="img_responsive lang" alt="javascript">
-                <ul class="expul">
-                    <li class="expli">1 year Intermediate</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row experience">
-            <h3 class="text-weight-bold">Professional Skills</h3>
-        </div>
-        <div>
-            <ul class="ulexperience_professional">
-                <li><strong>Data Analysis & Visualization:</strong> Extensive experience in descriptive, bivariate, and multivariate analysis. Skilled in crafting high-quality graphics with R, especially using ggplot2, leveraging register data for insights.</li>
-                <li><strong>Shiny App Development:</strong> Successfully developed a Shiny App integrated with an SQLite server, offering users interactive data visualization and analysis capabilities.</li>
-                <li><strong>Work Experience:</strong> Contributed to projects at the Cantonal Social Welfare Office in Zurich, performing in-depth data analyses and visualizations.</li>
-                <li><strong>React Application Development:</strong> Proficient in building responsive and interactive web applications using React, including the implementation of state management, routing, and component-based architecture for seamless user experiences.</li>
-                <li><strong>Express.js:</strong> Skilled in creating robust backend APIs and web servers using Express.js, enabling efficient communication between the frontend and backend of web applications.</li>
-                <li><strong>PostgreSQL Database:</strong> Experienced in designing and managing relational databases with PostgreSQL, including data modeling, querying, and optimization for data-driven applications.</li>
-                <li><strong>Node.js:</strong> Proficient in utilizing Node.js for server-side scripting and backend development, enabling the creation of scalable and high-performance web applications.</li>
-                <li><strong>Django Web Development:</strong> Developed high-performance web applications using Django, focusing on solutions for supplementary benefits in Switzerland. Key projects include a comprehensive information platform and a user-engagement forum. Implemented user authentication, dynamic database models, and RESTful APIs for efficient data handling. One notable project is <a href="https://www.zlel.ch">eli</a>, which features an interactive forum for user participation and detailed resources on supplementary benefits.</li>
+<header class="container" data-turbo-permanent>
+    <div>
+        <h1>Fabian Marc Pascal Berger</h1>
+    </div>
+    <div>
+        <nav>
+            <!-- Verwendung von Turbo Drive für die Navigation -->
+            <a href="index.html" role="navigation">Home</a>
+            <a href="./about.html" role="navigation">About</a>
+            <a href="./education.html" role="navigation">Education</a>
+            <a href="./experience.html" role="navigation">Experience</a>
+            <a href="./contactme.html" role="navigation">Contact</a>
+        </nav>
+    </div>
+</header>
+        <main>
+            <div class="container"> <!-- Added container wrapper -->
+                <section class="jumbotron p-4">
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="jumbotron_text">Experience</h2>
+                        </div>
+                    </div>
+                </section>
+            </div> <!-- End of container wrapper -->
+            <section class="container">
+                <div class="row">
+                    <div class="col-sm-3 langexp">
+                        <img src="./ressources/r.png" class="img_responsive lang" alt="r language">
+                        <ul class="expul">
+                            <li class="expli">2 years Intermediate</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 langexp">
+                        <img src="./ressources/python.svg" class="img_responsive lang" alt="python language">
+                        <ul class="expul">
+                            <li class="expli">2 years Intermediate</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 langexp">
+                        <img src="./ressources/html.png" class="img_responsive lang" alt="html and css">
+                        <ul class="expul">
+                            <li class="expli">1 year Intermediate</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 langexp">
+                        <img src="./ressources/javascript.png" class="img_responsive lang" alt="javascript">
+                        <ul class="expul">
+                            <li class="expli">1 year Intermediate</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row experience">
+                    <h3 class="text-weight-bold">Professional Skills</h3>
+                </div>
+                <div>
+                    <ul class="ulexperience_professional">
+                        <li><strong>Data Analysis & Visualization:</strong> Extensive experience in descriptive, bivariate, and multivariate analysis. Skilled in crafting high-quality graphics with R, especially using ggplot2, leveraging register data for insights.</li>
+                        <li><strong>Shiny App Development:</strong> Successfully developed a Shiny App integrated with an SQLite server, offering users interactive data visualization and analysis capabilities.</li>
+                        <li><strong>Work Experience:</strong> Contributed to projects at the Cantonal Social Welfare Office in Zurich, performing in-depth data analyses and visualizations.</li>
+                        <li><strong>React Application Development:</strong> Proficient in building responsive and interactive web applications using React, including the implementation of state management, routing, and component-based architecture for seamless user experiences.</li>
+                        <li><strong>Express.js:</strong> Skilled in creating robust backend APIs and web servers using Express.js, enabling efficient communication between the frontend and backend of web applications.</li>
+                        <li><strong>PostgreSQL Database:</strong> Experienced in designing and managing relational databases with PostgreSQL, including data modeling, querying, and optimization for data-driven applications.</li>
+                        <li><strong>Node.js:</strong> Proficient in utilizing Node.js for server-side scripting and backend development, enabling the creation of scalable and high-performance web applications.</li>
+                        <li><strong>Django Web Development:</strong> Developed high-performance web applications using Django, focusing on solutions for supplementary benefits in Switzerland. Key projects include a comprehensive information platform and a user-engagement forum. Implemented user authentication, dynamic database models, and RESTful APIs for efficient data handling. One notable project is <a href="https://www.zlel.ch">eli</a>, which features an interactive forum for user participation and detailed resources on supplementary benefits.</li>
 
-            </ul>
-        </div>
-        <div class="row experience">
-            <h3 class="text-weight-bold">Personal Projects</h3>
-        </div>
-        <div>
-            <ul class="ulexperience">
-                <li><strong>eli Django App:</strong> <a href="https://www.zlel.ch" target="_blank" class="portfolio">eli</a></li>
-                <li><strong>YELP API Portfolio-Project:</strong> <a href="https://www.gleipnir.ch" target="_blank" class="portfolio">Gleipnir</a></li>
-                <li><strong>Spotify API Portfolio-Project:</strong> <a href="https://spotiy-portfolio.onrender.com/" target="_blank" class="portfolio">Jammming App</a></li>
-                <li><strong>Swiss Artist Web-Project:</strong> <a href="https://www.art-by-trix.com" target="_blank" class="portfolio">Art by Trix</a>
-                <li><strong>Swiss Artist Web-Project:</strong> <a href="https://www.nikita-art.ch" target="_blank" class="portfolio">Nikita</a></li>
-                <li><strong>ML Project - Kaggle:</strong> <a href="https://fmpberger88-titanic-app-q1sfwd.streamlit.app/" target="_blank" class="portfolio">Survival Predictor</a></li>
-                <li><strong>ML Project - Spotify:</strong> <a href="https://fmpberger88-spotify-recommender-app-vexsq4.streamlit.app/" target="_blank" class="portfolio">Song Recommender</a></li>
-                <li><strong>Portfolio-Project Codecademy:</strong> <a href="https://fmpberger88.github.io/project-1-rock-paper-scissors-x99-start/" target="_blank" class="portfolio">Rock Paper Scissors x 99</a></li>
-                <li><strong>Portfolio-Project Codecademy:</strong> <a href="https://darling-cajeta-55bbb9.netlify.app/" target="_blank" class="portfolio">Simple Rock Paper Scissors</a></li>
-                <li><strong>Portfolio-Project Codecademy:</strong> <a href="https://urchin-app-zccdc.ondigitalocean.app/" target="_blank" class="portfolio">Showcase Design 1</a></li>
-                <li><strong>Portfolio-Project Codecademy:</strong> <a href="https://seashell-app-e73ok.ondigitalocean.app/" target="_blank" class="portfolio">Showcase Design 2</a></li>
-                <li><strong>Portfolio-Project Codecademy:</strong> <a href="https://seashell-app-2-ijj6z.ondigitalocean.app/index.html" target="_blank" class="portfolio">Showcase Design 3</a></li>
-            </ul>
-        </div>
-    </section>
-    <footer class="container">
+                    </ul>
+                </div>
+                <div class="row experience">
+                    <h3 class="text-weight-bold">Personal Projects</h3>
+                </div>
+                <div>
+                    <ul class="ulexperience">
+                        <li><strong>eli Django App:</strong> <a href="https://www.zlel.ch" target="_blank" class="portfolio">eli</a></li>
+                        <li><strong>YELP API Portfolio-Project:</strong> <a href="https://www.gleipnir.ch" target="_blank" class="portfolio">Gleipnir</a></li>
+                        <li><strong>Spotify API Portfolio-Project:</strong> <a href="https://spotiy-portfolio.onrender.com/" target="_blank" class="portfolio">Jammming App</a></li>
+                        <li><strong>Swiss Artist Web-Project:</strong> <a href="https://www.art-by-trix.com" target="_blank" class="portfolio">Art by Trix</a>
+                        <li><strong>Swiss Artist Web-Project:</strong> <a href="https://www.nikita-art.ch" target="_blank" class="portfolio">Nikita</a></li>
+                        <li><strong>ML Project - Kaggle:</strong> <a href="https://fmpberger88-titanic-app-q1sfwd.streamlit.app/" target="_blank" class="portfolio">Survival Predictor</a></li>
+                        <li><strong>ML Project - Spotify:</strong> <a href="https://fmpberger88-spotify-recommender-app-vexsq4.streamlit.app/" target="_blank" class="portfolio">Song Recommender</a></li>
+                        <li><strong>Portfolio-Project Codecademy:</strong> <a href="https://fmpberger88.github.io/project-1-rock-paper-scissors-x99-start/" target="_blank" class="portfolio">Rock Paper Scissors x 99</a></li>
+                        <li><strong>Portfolio-Project Codecademy:</strong> <a href="https://darling-cajeta-55bbb9.netlify.app/" target="_blank" class="portfolio">Simple Rock Paper Scissors</a></li>
+                        <li><strong>Portfolio-Project Codecademy</strong> <a href="https://font-viewer.onrender.com" target="_blank" class="portfolio">Font-Review: with Alpine.js</a></li>
+                        <li><strong>Portfolio-Project Codecademy:</strong> <a href="https://urchin-app-zccdc.ondigitalocean.app/" target="_blank" class="portfolio">Showcase Design 1</a></li>
+                        <li><strong>Portfolio-Project Codecademy:</strong> <a href="https://seashell-app-e73ok.ondigitalocean.app/" target="_blank" class="portfolio">Showcase Design 2</a></li>
+                        <li><strong>Portfolio-Project Codecademy:</strong> <a href="https://seashell-app-2-ijj6z.ondigitalocean.app/index.html" target="_blank" class="portfolio">Showcase Design 3</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    <footer class="container" data-turbo-permanent>
         <div class="icons">
             <div>
                 <a href="https://www.linkedin.com/in/fabian-berger-80003ba6/" target="_blank" aria-label="Linkedin">
